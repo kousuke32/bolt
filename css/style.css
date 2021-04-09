@@ -7,12 +7,16 @@ body {
 }
 
 .title_font {
-	font-family: Raleway;
+	font-family: "Raleway";
 }
 
 .inner {
 	margin: 0 auto;
 	width: 1100px;
+}
+
+li {
+	display: inline-block;
 }
 
 .header {
@@ -46,13 +50,13 @@ body {
 	transition: all 0.3s;
 }
 
-a:hover {
+.a_contact:hover {
 	color: #333;
 }
 
 main {
 	width: 100%;
-	padding-top: 62px;
+	padding-top: 70px;
 }
 
 .theme {
@@ -80,18 +84,20 @@ main {
 }
 
 .info_inner {
-	display: table;
+	display: flex;
 }
 
 .img_info {
-	display: table-cell;
 	padding-left: 100px;
 }
 
+.iphone {
+	vertical-align: bottom;
+}
+
 .info_box {
-	display: table-cell;
 	vertical-align: middle;
-	padding: 50px;
+	padding: 55px;
 }
 
 .info_title {
@@ -114,15 +120,13 @@ main {
 }
 
 .content_img {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	font-size: 0;
 	margin-top: 40px;
 }
 
+
 .img {
-	box-sizing: border-box;
+	display: inline-block;
 	cursor: pointer;
 	margin-left: 100px;
 	transition: all 0.3s;
@@ -134,7 +138,7 @@ main {
 	margin-left: 0;
 }
 
-.img:nth-child(n+4):nth-child(-n+6) {
+.img:nth-child(n+4) {
 	margin-top: 80px;
 }
 
@@ -151,24 +155,21 @@ main {
 }
 
 .content_box {
-	display: table;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-top: 90px;
 }
 
 .content_text {
-	display: table-cell;
-	padding: 0 90px;
+	padding-right: 90px;
 	text-align: center;
-	width: 700px;
+	width: 460px;
 }
 
 .content_access {
 	color: #fff;
 	font-size: 12px;
-}
-
-.content_access:hover {
-	color: #333;
 }
 
 .a_access {
@@ -180,7 +181,11 @@ main {
 	background-color: #74cfae;
 	box-sizing: border-box;
 	cursor: pointer;
-	transition: all 0.3;
+	transition: all 0.3s;
+}
+
+.a_access:hover {
+	color: #333;
 }
 
 .skills {
@@ -210,18 +215,19 @@ main {
 .skills_text:first-child {
 	margin-left: 0;
 }
-	
+
 .skills_sentens {
 	margin-top: 20px;
 }
-	
+
 .sns {
 	background-color:#f2f2f2;
 	text-align: center;
 	padding: 200px 0;
 }
-	
-.size {
+
+.a_sns {
+	text-decoration: none;
 	font-size: 2em;
 	color: #74cfae;
 	width: 185px;
@@ -232,15 +238,11 @@ main {
 	padding: 50px 0;
 }
 
-.size:hover {
+.a_sns:hover {
 	background-color: #fff;
 	box-sizing: border-box;
 	width: 185px;
 	padding: 50px 0;
-}
-
-.a_sns {
-	text-decoration: none;
 }
 
 .footer {
@@ -256,3 +258,4 @@ main {
 .footer_text {
 	color: #fff;
 }
+
