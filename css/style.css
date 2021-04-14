@@ -10,15 +10,6 @@ body {
 	font-family: "Raleway";
 }
 
-.inner {
-	margin: 0 auto;
-	width: 1100px;
-}
-
-li {
-	display: inline-block;
-}
-
 .header {
 	background-color: #fff;
 	width: 100%;
@@ -41,17 +32,8 @@ li {
 .a_contact {
 	display: inline-block;
 	text-decoration: none;
-	font-size: 12px;
-	color: #fff;
-	padding: 14px 12px;
-	background-color: #74cfae;
-	box-sizing: border-box;
 	cursor: pointer;
 	transition: all 0.3s;
-}
-
-.a_contact:hover {
-	color: #333;
 }
 
 main {
@@ -62,7 +44,6 @@ main {
 .theme {
 	background-color: #f2f2f2;
 	text-align: center;
-	padding: 250px 0;
 }
 
 .title {
@@ -83,21 +64,8 @@ main {
 	padding-top: 50px
 }
 
-.info_inner {
-	display: flex;
-}
-
-.img_info {
-	padding-left: 100px;
-}
-
 .iphone {
 	vertical-align: bottom;
-}
-
-.info_box {
-	vertical-align: middle;
-	padding: 55px;
 }
 
 .info_title {
@@ -124,22 +92,11 @@ main {
 	margin-top: 40px;
 }
 
-
 .img {
-	display: inline-block;
 	cursor: pointer;
-	margin-left: 100px;
 	transition: all 0.3s;
 	opacity: 0.7;
 	z-index: 10;
-}
-
-.img:nth-child(3n+1) {
-	margin-left: 0;
-}
-
-.img:nth-child(n+4) {
-	margin-top: 80px;
 }
 
 .img:hover {
@@ -152,19 +109,6 @@ main {
 
 .content_title {
 	font-size: 24px;
-}
-
-.content_box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 90px;
-}
-
-.content_text {
-	padding-right: 90px;
-	text-align: center;
-	width: 460px;
 }
 
 .content_access {
@@ -191,8 +135,6 @@ main {
 .skills {
 	background-color: #4e4e4e;
 	text-align: center;
-	padding-bottom: 100px;
-	padding-top: 70px;
 }
 
 .skills_title {
@@ -203,17 +145,11 @@ main {
 .skills_img {
 	display: flex;
 	justify-content: center;
-	margin-top: 40px;
 }
 
 .skills_text {
-	margin-left: 180px;
 	color: #fff;
 	font-size: 16px;
-}
-
-.skills_text:first-child {
-	margin-left: 0;
 }
 
 .skills_sentens {
@@ -259,3 +195,208 @@ main {
 	color: #fff;
 }
 
+@media screen and ( min-width:768px) {
+	.a_contact {
+		font-size: 12px;
+		color: #fff;
+		padding: 14px 12px;
+		background-color: #74cfae;
+		box-sizing: border-box;
+	}
+
+	.a_contact:hover {
+		color: #333;
+	}
+
+	.theme {
+		padding: 250px 0;
+	}
+}
+
+@media screen and ( min-width:1200px) {
+	.inner {
+		margin: 0 auto;
+		width: 1100px;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	.info_inner {
+		display: flex;
+	}
+
+	.img_info {
+		padding-left: 100px;
+	}
+
+	.info_box {
+		vertical-align: middle;
+		padding: 55px;
+	}
+
+	.img {
+		display: inline-block;
+		margin-left: 100px;
+	}
+
+	.img:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+	.img:nth-child(n+4) {
+		margin-top: 80px;
+	}
+
+	.content_box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 90px;
+	}
+
+	.content_text {
+		padding-right: 90px;
+		text-align: center;
+		width: 460px;
+	}
+
+	.skills {
+		padding-bottom: 100px;
+		padding-top: 70px;
+	}
+
+	.skills_img {
+		margin-top: 40px;
+	}
+
+	.skills_text {
+		margin-left: 180px;
+	}
+
+	.skills_text:first-child {
+		margin-left: 0;
+	}
+}
+
+@media screen and ( max-width:1199px) {
+	.inner {
+		margin: 0 auto;
+		width: 97%;
+	}
+
+	.info_title {
+		margin-top: 20px;
+	}
+
+	.img:nth-child(4) {
+		margin-top: 80px;
+	}
+}
+
+@media screen and ( min-width:768px) and ( max-width:1199px) {
+	.info {
+		padding-bottom: 25px;
+	}
+
+	.info_box {
+		margin: 0 auto;
+	}
+
+	.content_box {
+		margin-top: 80px;
+	}
+
+	.content_text {
+		margin: 0 auto;
+		width: 800px;
+	}
+
+	.content_access {
+		margin-top: 40px;
+	}
+
+	.skills {
+		padding: 70px 0;
+	}
+
+	.skills_text {
+		margin-top: 88px;
+	}
+
+	.skills_text:first-child {
+		margin-top: 40px;
+	}
+
+	.sns_li {
+		display: inline-block;
+	}
+}
+
+@media screen and ( max-width: 767px) {
+	.toggle {
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	.toggle span {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #c0c0c0;
+	}
+
+	.toggle span:nth-child(1) {
+		margin-top: 5px;
+	}
+
+	.toggle span:nth-child(2) {
+		margin-top:7px;
+	}
+
+	.toggle span:nth-child(3) {
+		margin-top: 7px;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.theme {
+		padding: 160px 0 130px 0;
+	}
+
+	.title {
+		font-size: 80px;
+	}
+
+	.info {
+		padding-bottom: 20px;
+	}
+
+	.info_text {
+		width: 297px;
+	}
+
+	.content_box {
+		margin-top: 45px;
+	}
+
+	.content_access {
+		margin-top: 30px;
+	}
+
+	.skills {
+		padding: 50px 0;
+	}
+
+	.skills_img .skills_text {
+		margin-top: 40px;
+	}
+
+	.sns {
+		padding: 50px 0;
+	}
+}
