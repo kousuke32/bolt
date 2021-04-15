@@ -196,6 +196,10 @@ main {
 }
 
 @media screen and ( min-width:768px) {
+	.toggle .toggle span {
+		display: none;
+	}
+
 	.a_contact {
 		font-size: 12px;
 		color: #fff;
@@ -297,6 +301,10 @@ main {
 	.img:nth-child(3n+1) {
 		margin-top: 80px;
 	}
+
+	.img:first-child {
+		margin-top: 40px;
+	}
 	
 	.skills_img {
 		margin-top: 40px;
@@ -310,10 +318,6 @@ main {
 @media screen and ( min-width:768px) and ( max-width:1199px) {
 	.info {
 		padding-bottom: 25px;
-	}
-
-	.info_box {
-		margin: 0 auto;
 	}
 
 	.content_box {
@@ -406,8 +410,10 @@ main {
 	.a_sns {
 		font-size: 4em;
 		width: 97%;
+		padding: 35px 0;
 	}
 	.a_sns:hover {
 		width: 97%;
+		padding: 35px 0;
 	}
 }
