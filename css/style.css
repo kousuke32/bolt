@@ -407,6 +407,10 @@ main {
 		margin-top: 40px;
 	}
 
+	.sns {
+		padding: 50px 0;
+	}
+
 	.a_sns {
 		font-size: 4em;
 		width: 97%;
